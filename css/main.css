@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.cabecera{
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2.5%;
+    background: #e4e4e4;
+}
+.logo_container{
+    width: 300px;
+}
+.logo_container img{
+    width: 100%;
+}
+.menu_header ul{
+    list-style: none;
+}
+.menu_header ul li{
+    display: inline-block;
+    margin: 10px;
+}
+.menu_header ul li a{
+    color: #333;
+    text-decoration: none;
+}
+.menu_header ul li a i{
+    font-size: 20px;
+    line-height: 20px;
+}
+/* ------------carosuel main------------- */
+.container_main_carousel{
+    margin-bottom: 60px;
+}
+.carousel-caption{
+    color: #000;
+}
+.carousel-.carousel-indicators [data-bs-target]{
+    color: #000;
+}
+
+/* ------------tarjetas categoria------------- */
+
+.container_tarjetas_categoria{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px 1%;
+
+
+}
+.tarjeta_categoria{
+    background: #ccc;
+    height: 180px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+}
+.tarjeta_categoria > img{
+    width: 100px;
+    margin-right: 10px;
+}
+
+
+
+.container_carousels_mustra{
+    background: #F8F9F9;
+}
+.carousel_muestra_bodas_contenedor{
+    position: relative;
+}
+.carousel_muestra_bodas{
+    padding: 0px 1%;
+}
+.carousel_muestra_bodas_elemento{
+    margin: 20px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,.40);
+}
+.carousel_muestra_bodas_anterior,
+.carousel_muestra_bodas_siguiente{
+    position: absolute;
+    border: none;
+    background: none;
+    font-size: 40px;
+    top: calc(50% - 20px);
+    z-index: 100;
+    color: #fff;
+    background: #222;
+    box-shadow: 2px 5px 10px rgba(0,0,0,.40);
+    padding: 3px;
+}
+.carousel_muestra_bodas_anterior{
+    left: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.carousel_muestra_bodas_siguiente{
+    right: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
